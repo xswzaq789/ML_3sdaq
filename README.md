@@ -6,5 +6,6 @@ This is new project that predicting stock prospects through the news.
 @xswzaq789   
 @yourms   
 @likeaAI   
-@손현진(ID 알려주시면 바꿀게요!)     
-@전기성(ID 알려주시면 바꿀게요!)
+@JIIINIII     
+@quan112897@gmail.com
+
