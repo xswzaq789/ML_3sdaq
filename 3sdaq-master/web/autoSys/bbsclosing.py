@@ -62,6 +62,7 @@ def bbs_update():
     #file = open("news.txt", "w")
     news = soup.select("strong.tit_g")
     #print("len(news) : ", len(news))
+    # 뉴스가 5개가 넘으면 기존꺼 뉴스 지우고 새로운 뉴스를 입력
     if(len(news) > 5):
         sql_delete = "delete from bbsApp_sbs"
         cur.execute(sql_delete)
@@ -80,6 +81,7 @@ def bbs_update():
         con.commit()
         con.close()
 
+# 임시 장마감 처리
 def insert_daily_prices_closing(market_price, d_day):
     con = sqlite3.connect(dbURL)
     cur = con.cursor()

@@ -2,6 +2,7 @@ import sqlite3
 from random import sample, randrange
 con = sqlite3.connect('../db.sqlite3')
 
+# 사용자 입력
 def input_webuser():
     cur = con.cursor()
     count = 1
@@ -24,6 +25,7 @@ def input_webuser():
     print("input_webuser 완료")
     #end input_webuser()
 
+# 회사(코드, 이름, 타입, 주식수량, 전일가)정보 입력
 def input_comp():
     cur = con.cursor()
 
@@ -59,6 +61,7 @@ def input_comp():
     print("input_comp 완료")
     #end input_comp()
 
+# 사용자의 초기 주식배정
 def input_ballance():
     cur = con.cursor()
     sql_select = "select user_id from userApp_webuser"
@@ -116,7 +119,7 @@ def input_ballance():
     print("input_ballance 완료")
     #end input_ballance()
 
-
+# 게시판
 def input_webNotice():
     cur = con.cursor()
 
@@ -147,6 +150,7 @@ def input_webNotice():
     print("input_webNotice 완료")
     #end input_comp()
 
+# 최기입력값 지우기
 def clear_inputData():
     cur = con.cursor()
     sql_delete = "delete from userApp_webuser"

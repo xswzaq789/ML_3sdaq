@@ -27,7 +27,7 @@ def sTrade_list(request):
         user_id = request.POST.get('user_id', '')
 
         user_id = request.session['user_id']
-        d_day = '-0 day'
+        d_day = '-0 day'  # 오늘 거래
         market_price = query_market_price(d_day)
         myStock_price = query_myStock_price(user_id)
         #my_query = query_db(query_txt)

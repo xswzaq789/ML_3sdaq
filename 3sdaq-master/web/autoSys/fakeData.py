@@ -311,7 +311,7 @@ for i in range(14, -1, -1): # 2주 기준으로 현재가 설정(오늘꺼까지
 
     d_day_str = '-' + str(i) + ' day'
     print("Day : ", d_day_str + " 데이터 생성중...")
-    d_state = random.choices(['GOOD', 'SOSO', 'BAD'], weights=[6, 3, 2], k=1) # 그날의 상태 적용
+    d_state = random.choices(['GOOD', 'SOSO', 'BAD'], weights=[4, 3, 3], k=1) # 그날의 상태 적용
     #print("day, state : ", d_day_str, d_state[0])
     import datetime
     dt_now = datetime.datetime.now()
